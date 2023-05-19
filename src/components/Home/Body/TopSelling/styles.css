@@ -1,0 +1,251 @@
+.TopSelling {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 40px;
+
+    width: 1410px;
+    height: 1255px;
+}
+
+.TopSelling-header {
+    width: auto;
+    height: 42px;
+
+    font-family: 'General Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 49px;
+
+    display: flex;
+    justify-content: center;
+
+    color: var(--small-text-color-1);
+}
+
+.TopSelling-header > div {
+    position: relative;
+    width: 220px;
+}
+
+.TopSelling-header:hover {
+    .underline {
+        background-color: blue;
+        width: 100%;
+        height: 2px;
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 4px;
+    }
+}
+
+.TopSelling-conten {
+    position: relative;
+    width: auto;
+    height: 19px;
+
+    font-family: 'General Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+
+    text-align: center;
+
+    color: var(--small-text-color-5);
+    margin-top: 5px;
+}
+
+.TopSelling-conten:hover {
+    .underline {
+        background-color: blue;
+        width: 100%;
+        height: 2px;
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 4px;
+    }
+}
+
+.TopSelling-grid {
+    display: grid;
+    width: 100%;
+    height: 1052px;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 30px;
+    row-gap: 40px;
+}
+
+.TopSelling-grid-pos {
+    width: 330px;
+    height: 506px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.TopSelling-grid-imgContainer {
+    width: 100%;
+    height: 420px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.TopSelling-grid-img {
+    width: calc(100% - 4px);
+    height: 420px;
+    border-radius: 10px;
+    border: 2px solid white;
+    position: absolute;
+}
+
+.TopSelling-grid-label {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 3px;
+
+    position: absolute;
+    width: 77px;
+    height: 53px;
+    left: 15px;
+    top: 15px;
+}
+
+.TopSelling-grid-label > div {
+    color: white;
+}
+
+.TopSelling-grid-sale {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 4.5px 10px;
+    gap: 10px;
+    width: 52px;
+    height: 25px;
+    background: #9C6D3A;
+    border-radius: 20px;
+}
+
+.TopSelling-grid-preOrder {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 4.5px 10px;
+    gap: 10px;
+
+    width: 77px;
+    height: 25px;
+
+    background: #177983;
+    border-radius: 20px;
+}
+
+.TopSelling-grid-pos > div > div{
+    position: relative;
+
+    width: max-content;
+
+    font-family: 'General Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+
+    color: var(--small-text-color-1);
+}
+
+.TopSelling-prices {
+    display: flex;
+    gap: 10px;
+    color: var(--small-text-color-1);
+}
+
+.TopSelling-oldPrice {
+    text-decoration-line: line-through;
+    color:#8D979E;
+}
+
+.TopSelling-grid-pos > div > div:hover {
+    .underline {
+        background-color: blue;
+        width: 100%;
+        height: 2px;
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 4px;
+    }
+}
+
+.TopSelling-grid-img:hover {
+    border: 2px solid blue;
+}
+
+.TopSelling-button {
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+
+    width: 200px;
+    height: 50px;
+
+    border: 1px solid #DEDEDE;
+    border-radius: 300px;
+}
+
+.TopSelling-button > div {
+    position: relative;
+    width: max-content;
+}
+
+.TopSelling-button > div:hover {
+    cursor: pointer;
+    .underline {
+        background-color: blue;
+        width: 100%;
+        height: 2px;
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 4px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .TopSelling {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        gap: 10px;
+
+        width: 100vw;
+        height: auto;
+    }
+
+    .TopSelling-header {
+        display: flex;
+        justify-content: center;
+    }
+    .TopSelling-header > div {
+        width: auto;
+    }
+
+    .TopSelling-grid {
+        display: grid;
+        width: 100vw;
+        height: auto;
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: calc((100vw - 330px));
+    }
+}

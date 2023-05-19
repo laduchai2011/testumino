@@ -1,0 +1,54 @@
+:root {
+    --small-text-color-1: #111111;
+    --small-text-color-5: #555555;
+    --slider-button-color: #d784fe;
+}
+
+.Text-style { 
+  font-family: 'General Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--small-text-color-1);
+  bottom: 0;
+}
+
+.Text-style > div {
+  position: relative;
+}
+
+.Text-style:hover {
+  .underline {
+    background-color: blue;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 4px;
+  }
+}
+
+.icon-container {
+  position: relative;
+  width: 12px;
+  height: 12px;    
+
+  font-family: 'icon-dukamarket';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  color: var(--small-text-color-5);
+}
+
+.icon-container:hover {
+  .underline {
+    background-color: blue;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 4px;
+  }
+}

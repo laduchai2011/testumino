@@ -1,0 +1,218 @@
+.Slider {
+    width: 100%;
+    height: 798px;
+    position: relative;
+}
+
+.Slider-background {
+    width: 100%;
+    height: 100%;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+
+.Slider-background:hover {
+    border: 2px solid blue;
+    border-radius: 20px;
+}
+
+.Slider-button-icon {
+    width: 12px;
+    height: 12px;
+
+    font-family: 'blueskytechco';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    /* display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase; */
+}
+
+.Slider-button-icon-container:hover {
+    cursor: pointer;
+    .underline {
+        background-color: #d784fe;
+        width: 100%;
+        height: 2px;
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 4px;
+    }
+}
+
+.Slider-button-leftContainer {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 369px;
+    left: 30px;
+}
+
+.Slider-button-leftC {
+    position: relative;
+    border: 1px solid gray;
+    border-radius: 30px;
+}
+
+.Slider-button-leftC:hover {
+    border: 1px solid var(--slider-button-color);
+}
+
+.Slider-button-leftContainer > div {
+    position: absolute;
+}
+
+.Slider-button-rightContainer {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 369px;
+    right: 30px;
+}
+
+.Slider-button-rightC {
+    position: relative;
+    border: 1px solid black;
+    border-radius: 30px;
+}
+
+.Slider-button-rightC:hover {
+    border: 1px solid var(--slider-button-color);
+}
+
+.Slider-button-rightContainer > div {
+    position: absolute;
+}
+
+.Slider-button-icon-container {
+    position: relative;
+    width: 22px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Slider-button-buttonContainer {
+    position: absolute;
+    top: 486px;
+    left: calc((100% - 180px)/2);
+    width: 180px;
+    height: 55px;
+    border-radius: 30px;
+    border: 2px solid white;
+}
+
+.Slider-button-buttonContainer:hover {
+    border: 2px solid var(--slider-button-color);
+}
+
+.Slider-text1 {
+    position: absolute;
+    width: 182px;
+    height: 18px;
+
+    font-family: 'General Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: white;
+    
+    top: 256px;
+    left: calc((100% - 182px)/2);
+}
+
+.Slider-text2 {
+    position: absolute;
+    width: 736px;
+    height: 96px;
+
+    font-family: 'General Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 90px;
+    line-height: 122px;
+
+    color: white;
+
+    top: 284px;
+    left: calc((100% - 736px)/2);
+}
+
+.Slider-text3 {
+    position: absolute;
+    width: 290px;
+    height: 20px;
+
+    font-family: 'General Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: white;
+
+    top: 416px;
+    left: calc((100% - 290px)/2);
+}
+
+.Slider-text:hover {
+    .underline {
+        background-color: #d784fe;
+        width: 100%;
+        height: 2px;
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 4px;
+    }
+}
+
+.Slider-dotContainer {
+    position: absolute;
+    display: flex;
+    gap: 10px;
+
+    top: 760px;
+    left: calc((100% - 28px)/2);
+}
+
+.Slider-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    border: 1px solid gray;
+}
+
+.Slider-dot:hover {
+    border: 1px solid var(--slider-button-color);
+}
+
+@media screen and (max-width: 400px) {
+    .Slider, .Slider-background {
+        width: 100vw;
+        height: 300px;
+        position: relative;
+        border: 0px solid white;
+    }
+
+    .Slider-background:hover {
+        border: 0px solid white;
+    }
+
+    .Slider-button-leftContainer, 
+    .Slider-button-rightContainer, 
+    .Slider-button-buttonContainer,
+    .Slider-text1, .Slider-text2, .Slider-text3,
+    .Slider-dotContainer{
+        display: none;
+    }
+}

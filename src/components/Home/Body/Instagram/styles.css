@@ -1,0 +1,95 @@
+.Instagram {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 40px;
+
+    width: 1410px;
+    height: 331px;
+
+    border-radius: 20px;
+}
+
+.Instagram-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 5px;
+
+    width: 457px;
+    height: 73px;
+}
+
+.Instagram-title-header {
+    width: 159px;
+    height: 49px;
+
+    font-family: 'General Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 49px;
+
+    color: var(--small-text-color-1);
+}
+
+.Instagram-title-content {
+    width: 457px;
+    height: 19px;
+
+    font-family: 'General Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+
+    text-align: center;
+
+    color: var(--small-text-color-5);
+}
+
+.Instagram-text-underline:hover {
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    text-decoration-color: blue;
+}
+
+.Instagram-imgsContainer {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    width: 100%;
+    height: 218px;
+    gap: 20px;
+}
+
+.Instagram-imgContainer {
+    position: relative;
+    /* background-color: blanchedalmond; */
+    width: 218px ;
+    height: 100%;
+}
+
+.Instagram-img {
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+.Instagram-img:hover {
+    border: 2px solid blue;
+}
+
+.Instagram-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+@media screen and (max-width: 400px) {
+    .Instagram {
+        display: none;
+    }
+}

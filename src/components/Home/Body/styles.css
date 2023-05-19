@@ -1,0 +1,26 @@
+.Body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 100px;
+
+    width: 1860px;
+    height: 4121px;
+    margin-top: 31px;
+    /* background-color: yellow; */
+    padding-bottom: 100px;
+}
+
+.Body-boder {
+    width: 1410px;
+    height: 1px;
+    border: 1px solid #EBEBEB;;
+}
+
+@media screen and (max-width: 400px) {
+    .Body {
+        gap: 25px;
+        height: max-content;
+    }
+}

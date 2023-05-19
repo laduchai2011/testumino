@@ -1,0 +1,9 @@
+.Home {
+    width: 100%;
+    height: 4888px;
+}
+
+.Home-body {
+    display: flex;
+    justify-content: center;
+}
